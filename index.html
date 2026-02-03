@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Nhập Dữ Liệu Kiểm Nghiệm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Phiếu Kết Quả Kiểm Nghiệm</h1>
+        <form id="labForm">
+            <div class="form-group main-info">
+                <label>Tên mẫu kiểm nghiệm:</label>
+                <input type="text" id="sampleName" placeholder="Nhập tên mẫu..." required>
+            </div>
+
+            <fieldset>
+                <legend>1. Chỉ tiêu chất lượng</legend>
+                <div class="grid-3">
+                    <label>Độ ẩm: <input type="number" step="0.01" name="doAm"></label>
+                    <label>Tro HT trong acid: <input type="number" step="0.01" name="troAcid"></label>
+                    <label>Tro tổng: <input type="number" step="0.01" name="troTong"></label>
+                    <label>Đường tổng: <input type="number" step="0.01" name="duongTong"></label>
+                    <label>Carbohydrate: <input type="number" step="0.01" name="carbo"></label>
+                    <label>Chất khô hòa tan: <input type="number" step="0.01" name="chatKho"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Chỉ tiêu vi sinh</legend>
+                <div class="grid-3">
+                    <label>Tổng VSV HK: <input type="number" name="vsvHk"></label>
+                    <label>Nấm men/mốc: <input type="number" name="namMen"></label>
+                    <label>Coliform: <input type="number" name="coliform"></label>
+                    <label>E.coli: <input type="number" name="ecoli"></label>
+                    <label>Cl.perfrigens: <input type="number" name="clPer"></label>
+                    <label>B.cereus: <input type="number" name="bcereus"></label>
+                    <label>S.aureus: <input type="number" name="saureus"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3 & 4. Kim loại nặng & Độc tố vi nấm</legend>
+                <div class="grid-3">
+                    <label>Chì (Pb): <input type="number" step="0.001" name="pb"></label>
+                    <label>Asen (As): <input type="number" step="0.001" name="as"></label>
+                    <label>Cadmi (Cd): <input type="number" step="0.001" name="cd"></label>
+                    <label>Thủy ngân (Hg): <input type="number" step="0.001" name="hg"></label>
+                    <label>Aflatoxin tổng: <input type="number" step="0.001" name="aflatoxin"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>5. Dư lượng thuốc BVTV</legend>
+                <div class="grid-3">
+                    <label>Chlor.methyl: <input type="number" step="0.001" name="chlor"></label>
+                    <label>Cypermethrin: <input type="number" step="0.001" name="cyper"></label>
+                    <label>Fenitrothion: <input type="number" step="0.001" name="fenitro"></label>
+                    <label>Fluccythrinate: <input type="number" step="0.001" name="flucy"></label>
+                    <label>Methidathion: <input type="number" step="0.001" name="methi"></label>
+                    <label>Propargite: <input type="number" step="0.001" name="propargite"></label>
+                </div>
+            </fieldset>
+
+            <button type="submit" id="submitBtn">Lưu kết quả & Đối chiếu chuẩn</button>
+        </form>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
