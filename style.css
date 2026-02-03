@@ -1,0 +1,11 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #eef2f3; padding: 20px; }
+.container { max-width: 900px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+h1 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+fieldset { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 20px; padding: 15px; }
+legend { font-weight: bold; color: #2980b9; padding: 0 10px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+label { font-size: 13px; color: #333; }
+input { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+button { width: 100%; padding: 15px; background: #27ae60; color: white; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; transition: 0.3s; margin-top: 20px; }
+button:hover { background: #219150; }
+#status { text-align: center; margin-top: 20px; font-weight: bold; }
