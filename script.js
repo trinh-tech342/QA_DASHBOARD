@@ -1,4 +1,4 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw9guxCs57wvxZErDGep3avnqoYvPgKC_uY8KnP5_GWOn1j4VJ408jUbXNMFjQm1sRzHQ/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzGeWsRonzWVlWvwSpRxDdFmI9V1Ve8Kcp0ggsTJbmm7ueAKs5EnYnn1QQCoYSbhBCsog/exec';
 const form = document.getElementById('labForm');
 
 form.addEventListener('submit', e => {
